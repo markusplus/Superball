@@ -17,11 +17,11 @@ public class bola : MonoBehaviour
         
     }
 
-    void onCollisionEnter(Collision collision)
+    void onTriggerEnter(Collider collider)
     {
-        if (collision.gameObject.CompareTag("Meta") && collision.gameObject.CompareTag("Suelo"))
+        Debug.Log("Game Over");
+        if (collider.gameObject.CompareTag("Meta"))
         {
-            Debug.Log("Game Over");
             finPartida = true;
         }
     }
