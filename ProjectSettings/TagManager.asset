@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Meta
   - Suelo
+  - Jugador
+  - Origen
   layers:
   - Default
   - TransparentFX
