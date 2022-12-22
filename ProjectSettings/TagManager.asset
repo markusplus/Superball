@@ -8,6 +8,7 @@ TagManager:
   - Suelo
   - Jugador
   - Origen
+  - Pared
   layers:
   - Default
   - TransparentFX
