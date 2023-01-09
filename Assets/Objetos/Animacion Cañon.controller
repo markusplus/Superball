@@ -73,7 +73,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Disparando
+  m_Name: Reposo
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -87,8 +87,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 2944621508880588302, guid: aa6146ae36d42834faec7e1762e73e45, type: 3}
-  m_Tag: 
+  m_Motion: {fileID: 0}
+  m_Tag: Reposo
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -125,7 +125,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Por defecto
+  m_Name: Disparando
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -139,8 +139,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: 
+  m_Motion: {fileID: 2944621508880588302, guid: aa6146ae36d42834faec7e1762e73e45, type: 3}
+  m_Tag: Disparando
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 

@@ -7,6 +7,7 @@ public class tablero : MonoBehaviour
     public Transform target;
     public float velocidad;
     public float anguloMax;
+
     void Update()
     {
         // Smoothly tilts a transform towards a target rotation.

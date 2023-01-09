@@ -9,6 +9,7 @@ TagManager:
   - Jugador
   - Origen
   - Pared
+  - Mortero
   layers:
   - Default
   - TransparentFX

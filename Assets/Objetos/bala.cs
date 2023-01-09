@@ -5,12 +5,7 @@ public class bala : MonoBehaviour
 {
     public float bulletSpeed;
     private Rigidbody rb;
-
-    /*void Fire()
-    {
-        bulletClone = Instantiate(bullet, transform.position, transform.rotation);
-        bulletClone.velocity = transform.right * bulletSpeed;
-    }*/
+    public static bool fin = false;
 
     void Start()
     {
@@ -23,11 +18,18 @@ public class bala : MonoBehaviour
 
     }
 
-    //void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Pared")
-    //    { 
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == "Pared")
+        {
+            Destroy(gameObject);
+            //Debug.Log("Me tengo que destruir");
+        }
+        else if(collision.collider.tag == "Jugador")
+        {
+            Debug.Log("Se acaba la partida");
+            fin = true;
+        }
 
-    //    }
-    //}
+    }
 }

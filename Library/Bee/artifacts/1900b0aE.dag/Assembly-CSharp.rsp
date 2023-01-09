@@ -357,6 +357,7 @@
 "Assets/disparador.cs"
 "Assets/meta.cs"
 "Assets/Objetos/bala.cs"
+"Assets/Reiniciar.cs"
 "Assets/tablero.cs"
 "Assets/Trigger/ColliderDetection.cs"
 -langversion:9.0

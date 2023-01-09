@@ -362,6 +362,19 @@ MonoBehaviour:
   bala: {fileID: 9121274231352885134, guid: 88cecc154497eae4983d5dc3f2204648, type: 3}
   origen: {fileID: 982026200}
   interpolationPeriod: 2
+--- !u!65 &319447084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319447078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9514761, y: 1.2254729, z: 1.9634498}
+  m_Center: {x: -0.002254486, y: 1.3584714, z: -0.43876857}
 --- !u!1 &668690814
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +951,7 @@ GameObject:
   - component: {fileID: 1306549660}
   - component: {fileID: 1306549659}
   - component: {fileID: 1306549658}
+  - component: {fileID: 1306549662}
   m_Layer: 0
   m_Name: Suelo
   m_TagString: Suelo
@@ -1023,6 +1037,18 @@ Transform:
   m_Father: {fileID: 1658229719}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1306549662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306549657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b28ea9bf2faccb41ab661619a44d499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1323484075
 GameObject:
   m_ObjectHideFlags: 0
