@@ -11,11 +11,12 @@ public class bala : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = new Vector3(bulletSpeed, 0, 0);
+        fin = false;
     }
 
     void Update()
     {
-
+        //rb.transform.position = new Vector3(rb.transform.position.x, GameObject.Find("DestinoDisparo").transform.position.y - GameObject.Find("OrigenDisparo").transform.position.y, rb.transform.position.z);
     }
 
     void OnCollisionEnter(Collision collision)

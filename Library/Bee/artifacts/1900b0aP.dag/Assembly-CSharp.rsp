@@ -309,11 +309,19 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/disparador.cs"
+"Assets/Laser.cs"
 "Assets/meta.cs"
 "Assets/Objetos/bala.cs"
 "Assets/Reiniciar.cs"
 "Assets/tablero.cs"
 "Assets/Trigger/ColliderDetection.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CannonBehavior.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CreateSinShapedLineStrip.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/ShotBehavior.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/VolumetricMultiLineBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineStripBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineVertexData.cs"
 -langversion:9.0
 
 /deterministic

@@ -28,7 +28,7 @@ public class disparador : MonoBehaviour
 
     void Fire()
     {
-        GameObject balaDisparada = (GameObject)Instantiate(bala, origen.transform);
-        balaDisparada.GetComponent<bala>().bulletSpeed = 20f;
+        origen.transform.rotation = GameObject.Find("Tablero_container").transform.rotation;
+        GameObject balaDisparada = (GameObject)Instantiate(bala, origen.transform.position, GameObject.Find("Tablero_container").transform.rotation, origen.transform);
     }
 }

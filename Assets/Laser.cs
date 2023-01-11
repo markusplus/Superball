@@ -6,11 +6,13 @@ public class Laser : MonoBehaviour
 {
     private LineRenderer lr;
     private float time = 0.0f;
+    public GameObject go;
     public float interpolationPeriod;
 
     void Start()
     {
         lr = GetComponent<LineRenderer>();
+        Cast();
     }
 
     // Update is called once per frame
@@ -19,9 +21,10 @@ public class Laser : MonoBehaviour
         time += Time.deltaTime;
         if (time >= interpolationPeriod)
         {
-            Cast();
+            go.GetComponent<Laser>().enabled = true;
             time = 0.0f;
         }
+        else go.GetComponent<Laser>().enabled = false;
     }
 
     void Cast()

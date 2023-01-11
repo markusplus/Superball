@@ -361,6 +361,13 @@
 "Assets/Reiniciar.cs"
 "Assets/tablero.cs"
 "Assets/Trigger/ColliderDetection.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CannonBehavior.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CreateSinShapedLineStrip.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/ShotBehavior.cs"
+"Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/VolumetricMultiLineBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineStripBehavior.cs"
+"Assets/VolumetricLines/Scripts/VolumetricLineVertexData.cs"
 -langversion:9.0
 
 /deterministic
