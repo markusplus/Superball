@@ -39,6 +39,12 @@ namespace VolumetricLines
 		public Material m_templateMaterial;
 
 		/// <summary>
+		/// El Collider del láser, que es variable
+		/// </summary>
+		[SerializeField]
+		private BoxCollider m_Collider;
+
+		/// <summary>
 		/// Set to false in order to change the material's properties as specified in this script.
 		/// Set to true in order to *initially* leave the material's properties as they are in the template material.
 		/// </summary>
@@ -49,13 +55,13 @@ namespace VolumetricLines
 		/// The start position relative to the GameObject's origin
 		/// </summary>
 		[SerializeField] 
-		private Vector3 m_startPos;
+		public Vector3 m_startPos;
 		
 		/// <summary>
 		/// The end position relative to the GameObject's origin
 		/// </summary>
 		[SerializeField] 
-		private Vector3 m_endPos = new Vector3(0f, 0f, 0f);
+		public Vector3 m_endPos = new Vector3(0f, 0f, 0f);
 		private float i = 0f;
 		private float j = 0f;
 
@@ -360,6 +366,7 @@ namespace VolumetricLines
 			m_meshFilter = GetComponent<MeshFilter>();
 			m_meshFilter.mesh = mesh;
 			SetStartAndEndPoints(m_startPos, m_endPos);
+			m_Collider = GetComponent<BoxCollider>();
 			mesh.uv = VolumetricLineVertexData.TexCoords;
 			mesh.uv2 = VolumetricLineVertexData.VertexOffsets;
 			mesh.SetIndices(VolumetricLineVertexData.Indices, MeshTopology.Triangles, 0);
@@ -403,6 +410,8 @@ namespace VolumetricLines
 					j = 80f;
 				}
 			}
+			m_Collider.size = new Vector3(m_Collider.size.x, (m_endPos.y - m_startPos.y), m_Collider.size.z);
+			m_Collider.center = new Vector3(0.0f,((m_endPos.y + m_startPos.y) / 2f),0.0f);
 		}
 
 

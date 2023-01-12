@@ -10,6 +10,7 @@ TagManager:
   - Origen
   - Pared
   - Mortero
+  - Enemigo
   layers:
   - Default
   - TransparentFX
