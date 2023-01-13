@@ -62,6 +62,7 @@ namespace VolumetricLines
 		/// </summary>
 		[SerializeField] 
 		public Vector3 m_endPos = new Vector3(0f, 0f, 0f);
+		private bool pared = false;
 		private float i = 0f;
 		private float j = 0f;
 
@@ -393,7 +394,7 @@ namespace VolumetricLines
 		
 		void Update()
 		{
-			if(i < 80.0f) {
+			if(pared == false) {
 				i++;
 				m_endPos.Set(0.0f, i, 0.0f);
 				SetStartAndEndPoints(m_startPos, m_endPos);
@@ -406,14 +407,20 @@ namespace VolumetricLines
 					SetStartAndEndPoints(m_startPos, m_endPos);
 				}
 				else {
+					j = i;
 					i = 1f;
-					j = 80f;
+					pared = false;
 				}
 			}
 			m_Collider.size = new Vector3(m_Collider.size.x, (m_endPos.y - m_startPos.y), m_Collider.size.z);
 			m_Collider.center = new Vector3(0.0f,((m_endPos.y + m_startPos.y) / 2f),0.0f);
 		}
 
+		void OnCollisionEnter(Collision collision)
+		{
+			Debug.Log("Hoal");
+			pared = true;
+		}
 
 		void OnValidate()
 		{

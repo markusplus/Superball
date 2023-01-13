@@ -7,6 +7,9 @@ public class disparador : MonoBehaviour
     public GameObject bala, origen;
     private float time = 0.0f;
     public float interpolationPeriod;
+    public float velX;
+    public float velY;
+    public float velZ;
 
     public static GameObject balaDisparada;
 
@@ -25,12 +28,14 @@ public class disparador : MonoBehaviour
         {
             Fire();
             time = 0.0f;
-            balaDisparada.transform.rotation = GameObject.Find("Tablero_container").transform.rotation;
         }
     }
 
     void Fire()
     {
+
         balaDisparada = (GameObject)Instantiate(bala, origen.transform);
+        Rigidbody rb = balaDisparada.GetComponent<Rigidbody>();
+        rb.velocity = new Vector3(velX, velY, velZ);
     }
 }

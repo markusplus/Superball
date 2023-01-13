@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class meta : MonoBehaviour
 {
-    public bool finPartida;
-    // Start is called before the first frame update
+    public static bool finPartida = false;
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -19,17 +18,17 @@ public class meta : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("I'm the trigger, someone has enter");
+        Debug.Log("Pasas al siguiente nivel");
 
         if (other.tag == "Jugador")
         {
-            finPartida = true;
+            Controlador_Escena.siguienteEscena();
         }
 
     }
 
 
-    private void OnTriggerExit(Collider other)
+    /* private void OnTriggerExit(Collider other)
     {
         Debug.Log("OnTriggerExit Event");
 
@@ -39,5 +38,5 @@ public class meta : MonoBehaviour
         }
 
 
-    }
+    } */
 }
