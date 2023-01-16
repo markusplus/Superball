@@ -16,16 +16,16 @@ public class meta : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    /* private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Pasas al siguiente nivel");
 
         if (other.tag == "Jugador")
         {
-            Controlador_Escena.siguienteEscena();
+            
         }
 
-    }
+    } */
 
 
     /* private void OnTriggerExit(Collider other)

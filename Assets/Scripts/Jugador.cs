@@ -14,9 +14,17 @@ public class Jugador : MonoBehaviour
     {
         if(collision.collider.tag == "Enemigo")
         {
-            //Debug.Log("Se acaba la partida");
             fin = true;
         }
 
+    }
+
+    void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "Enemigo")
+            fin = true;
+        else if(other.tag == "Meta")
+            Debug.Log("Siguiente nivel");
+            Controlador_Escena.siguienteEscena();
     }
 }
