@@ -6,6 +6,7 @@ public class disparador : MonoBehaviour
 {
     public GameObject bala, origen;
     private float time = 0.0f;
+    private Rigidbody rb;
     public float interpolationPeriod;
     public float velX;
     public float velY;
@@ -35,7 +36,8 @@ public class disparador : MonoBehaviour
     {
 
         balaDisparada = (GameObject)Instantiate(bala, origen.transform);
-        Rigidbody rb = balaDisparada.GetComponent<Rigidbody>();
+        rb = balaDisparada.GetComponent<Rigidbody>();
         rb.velocity = new Vector3(velX, velY, velZ);
+        //rb.centerOfMass = GameObject.FindWithTag("Trayectoria").GetComponent<Rigidbody>().centerOfMass;
     }
 }

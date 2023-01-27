@@ -367,6 +367,7 @@
 "Assets/Scripts/meta.cs"
 "Assets/Scripts/pared.cs"
 "Assets/Scripts/tablero.cs"
+"Assets/Scripts/Volumetric2.cs"
 "Assets/Scripts/VolumetricLineBehavior.cs"
 "Assets/Trigger/ColliderDetection.cs"
 "Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CannonBehavior.cs"

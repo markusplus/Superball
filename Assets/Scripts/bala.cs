@@ -3,7 +3,7 @@ using System.Collections;
 
 public class bala : MonoBehaviour
 {
-    public static Rigidbody rb;
+
 
     void Start()
     {
