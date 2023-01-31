@@ -17,7 +17,7 @@ public class Controlador_Escena : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public static void siguienteEscena() {

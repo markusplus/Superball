@@ -43,6 +43,8 @@ namespace VolumetricLines
 		public Vector3 m_endPos = new Vector3(0f, 0f, 0f);
 		private float i = 0f;
 		private float j = 0f;
+		private float time = 0.0f;
+		public float interpolationPeriod;
 
 		/// <summary>
 		/// Line Color
@@ -341,6 +343,7 @@ namespace VolumetricLines
 		#region event functions
 		void Start () 
 		{
+			time = 0.0f;
 			Mesh mesh = new Mesh();
 			m_meshFilter = GetComponent<MeshFilter>();
 			m_meshFilter.mesh = mesh;
@@ -373,7 +376,12 @@ namespace VolumetricLines
 		
 		void Update()
 		{
-			ActualizaLaser();
+			time += Time.deltaTime;
+        	if (time >= interpolationPeriod)
+        	{
+            	ActualizaLaser();
+            	time = 0.0f;
+        	}
 		}
 
 		void ActualizaLaser() 

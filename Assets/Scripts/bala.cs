@@ -12,7 +12,7 @@ public class bala : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     void OnCollisionEnter(Collision collision)

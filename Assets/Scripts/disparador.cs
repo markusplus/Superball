@@ -34,7 +34,6 @@ public class disparador : MonoBehaviour
 
     void Fire()
     {
-
         balaDisparada = (GameObject)Instantiate(bala, origen.transform);
         rb = balaDisparada.GetComponent<Rigidbody>();
         rb.velocity = new Vector3(velX, velY, velZ);

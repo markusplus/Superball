@@ -14,6 +14,7 @@ public class Jugador : MonoBehaviour
     {
         if(collision.collider.tag == "Enemigo")
         {
+            Debug.Log("Reinicia");
             fin = true;
         }
 
