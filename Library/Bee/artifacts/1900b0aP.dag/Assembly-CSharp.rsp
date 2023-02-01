@@ -107,6 +107,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:PROBUILDER_EXPERIMENTAL_FEATURES
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
@@ -299,6 +300,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
 -r:"Z:/Unity/Superball/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
 -r:"Z:/Unity/Superball/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.ProBuilder.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.ref.dll"
@@ -308,18 +310,21 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
-"Assets/disparador.cs"
-"Assets/Laser.cs"
-"Assets/meta.cs"
-"Assets/Objetos/bala.cs"
-"Assets/Reiniciar.cs"
-"Assets/tablero.cs"
+"Assets/Scripts/bala.cs"
+"Assets/Scripts/Controlador_Escena.cs"
+"Assets/Scripts/disparador.cs"
+"Assets/Scripts/Jugador.cs"
+"Assets/Scripts/Laser.cs"
+"Assets/Scripts/meta.cs"
+"Assets/Scripts/pared.cs"
+"Assets/Scripts/tablero.cs"
+"Assets/Scripts/tableroGyro.cs"
+"Assets/Scripts/VolumetricLineBehavior.cs"
 "Assets/Trigger/ColliderDetection.cs"
 "Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CannonBehavior.cs"
 "Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/CreateSinShapedLineStrip.cs"
 "Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/ShotBehavior.cs"
 "Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleScripts/VolumetricMultiLineBehavior.cs"
-"Assets/VolumetricLines/Scripts/VolumetricLineBehavior.cs"
 "Assets/VolumetricLines/Scripts/VolumetricLineStripBehavior.cs"
 "Assets/VolumetricLines/Scripts/VolumetricLineVertexData.cs"
 -langversion:9.0
