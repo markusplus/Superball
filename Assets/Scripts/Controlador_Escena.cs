@@ -13,7 +13,19 @@ public class Controlador_Escena : MonoBehaviour
             primeraVez = false;
             Restart();
         }
-        //Debug.Log(Mathf.Clamp01(loadingOperation.progress / 0.9f));
+
+        var fingerCount = 0;
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase != TouchPhase.Ended && touch.phase != TouchPhase.Canceled)
+            {
+                fingerCount++;
+            }
+        }
+        if (fingerCount > 0)
+        {
+            Debug.Log("Se abre el menu");
+        }
     }
     public void Restart()
     {
