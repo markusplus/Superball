@@ -13,20 +13,26 @@ public class Controlador_Escena : MonoBehaviour
             primeraVez = false;
             Restart();
         }
+        else {
+            if(tocaPantalla()) {
+                Debug.Log("Se abre menu");
+            }
+        }
+    }
 
-        var fingerCount = 0;
+    public bool tocaPantalla()
+    {
+        bool result = false;
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase != TouchPhase.Ended && touch.phase != TouchPhase.Canceled)
             {
-                fingerCount++;
+                result = true;
             }
         }
-        if (fingerCount > 0)
-        {
-            Debug.Log("Se abre el menu");
-        }
+        return result;
     }
+
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
