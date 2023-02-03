@@ -7,6 +7,8 @@ public class Controlador_Escena : MonoBehaviour
 {
     private bool primeraVez = true;
 
+    public GameObject menu_victoria;
+
     private void Update()
     {
         if(Jugador.fin == true && primeraVez == true) {
@@ -14,8 +16,10 @@ public class Controlador_Escena : MonoBehaviour
             Restart();
         }
         else {
-            if(tocaPantalla()) {
-                Debug.Log("Se abre menu");
+            if(Input.GetMouseButtonDown(0)) { //tocaPantalla()
+                menu_victoria.SetActive(true);
+                //Debug.Log("Se abre menu");
+                Time.timeScale = 0f;
             }
         }
     }

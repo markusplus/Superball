@@ -12,6 +12,7 @@ TagManager:
   - Mortero
   - Enemigo
   - Trayectoria
+  - menu_victoria
   layers:
   - Default
   - TransparentFX
