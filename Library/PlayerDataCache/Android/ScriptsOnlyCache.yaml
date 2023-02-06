@@ -81,10 +81,13 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: menu_principal
+    methodName: Ayuda
+  - assembly: Assembly-CSharp
+    fullTypeName: menu_principal
     methodName: Niveles
   - assembly: Assembly-CSharp
     fullTypeName: seleccion_nivel
-    methodName: cargaMenu
+    methodName: cargaMenu_niveles
   - assembly: Assembly-CSharp
     fullTypeName: menu_principal
     methodName: Jugar
@@ -99,13 +102,13 @@ ScriptsOnlyBuild:
     methodName: cargaNivel3
   - assembly: Assembly-CSharp
     fullTypeName: seleccion_nivel
+    methodName: cargaMenu_ayuda
+  - assembly: Assembly-CSharp
+    fullTypeName: seleccion_nivel
     methodName: cargaNivel1
   - assembly: Assembly-CSharp
     fullTypeName: seleccion_nivel
     methodName: cargaNivel2
-  - assembly: Assembly-CSharp
-    fullTypeName: seleccion_nivel
-    methodName: cargaMenu
   - assembly: Assembly-CSharp
     fullTypeName: seleccion_nivel
     methodName: cargaNivel3
@@ -205,29 +208,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4886}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6146}
+      Script: {instanceID: 6144}
     - Class: 114
-      Script: {instanceID: 6272}
+      Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6418}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6758}
+      Script: {instanceID: 6756}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 7498}
+      Script: {instanceID: 7496}
     - Class: 114
-      Script: {instanceID: 7634}
+      Script: {instanceID: 7632}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 7702}
     - Class: 114
-      Script: {instanceID: 7984}
+      Script: {instanceID: 7982}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -298,23 +301,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5604}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6146}
+      Script: {instanceID: 6144}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6418}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6758}
+      Script: {instanceID: 6756}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 7702}
     - Class: 114
-      Script: {instanceID: 7984}
+      Script: {instanceID: 7982}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -393,27 +396,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5604}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6146}
+      Script: {instanceID: 6144}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6418}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6758}
+      Script: {instanceID: 6756}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 7498}
+      Script: {instanceID: 7496}
     - Class: 114
-      Script: {instanceID: 7634}
+      Script: {instanceID: 7632}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 7702}
     - Class: 114
-      Script: {instanceID: 7984}
+      Script: {instanceID: 7982}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -492,23 +495,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5604}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6418}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6758}
+      Script: {instanceID: 6756}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 7498}
+      Script: {instanceID: 7496}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 7702}
     - Class: 114
-      Script: {instanceID: 7984}
+      Script: {instanceID: 7982}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -561,17 +564,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4498}
     - Class: 114
-      Script: {instanceID: 5736}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6272}
+      Script: {instanceID: 6270}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6418}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1069,7 +1072,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 8116d8e91a2f53e27e1173ec64376990
+      Hash: 59dcc912df3721b1b1593c658c0c188a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: menu_principal
@@ -1301,12 +1304,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: WarpTextExample
-  - hash:
-      serializedVersion: 2
-      Hash: 3ed9e2c71686b10816706e4556214e0a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Laser
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34

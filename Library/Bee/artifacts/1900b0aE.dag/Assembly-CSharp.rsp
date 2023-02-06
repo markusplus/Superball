@@ -365,7 +365,6 @@
 "Assets/Scripts/Controlador_Escena.cs"
 "Assets/Scripts/disparador.cs"
 "Assets/Scripts/Jugador.cs"
-"Assets/Scripts/Laser.cs"
 "Assets/Scripts/menu_principal.cs"
 "Assets/Scripts/meta.cs"
 "Assets/Scripts/pared.cs"

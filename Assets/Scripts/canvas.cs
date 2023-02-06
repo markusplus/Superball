@@ -24,7 +24,7 @@ public class canvas : MonoBehaviour
         else
             temporizador.text = "0"+minutos.ToString() + ":" + "0"+segundos.ToString();
         segundos = Mathf.RoundToInt(time);
-        if(time >= 60) {
+        if(time >= 59) {
             minutos++;
             time = 0;
         }

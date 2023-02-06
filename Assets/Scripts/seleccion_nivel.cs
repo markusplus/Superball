@@ -41,9 +41,15 @@ public class seleccion_nivel : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
-    public void cargaMenu()
+    public void cargaMenu_niveles()
     {
         menu.SetActive(true);
         GameObject.Find("menu_niveles").SetActive(false);
+    }
+
+    public void cargaMenu_ayuda()
+    {
+        menu.SetActive(true);
+        GameObject.Find("menu_ayuda").SetActive(false);
     }
 }

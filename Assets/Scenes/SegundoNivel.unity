@@ -3184,7 +3184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 20
-  anguloMax: 40
+  anguloMax: 70
 --- !u!114 &785264482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4064,7 +4064,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53210
+  m_Name: pb_Mesh54446
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9415,7 +9415,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 2532, y: 1170}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
