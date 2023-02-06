@@ -16,7 +16,7 @@ public class Controlador_Escena : MonoBehaviour
             Restart();
         }
         else {
-            if(Input.GetMouseButtonDown(0)) { //tocaPantalla()
+            if(tocaPantalla()) { //tocaPantalla()
                 menu_victoria.SetActive(true);
                 //Debug.Log("Se abre menu");
                 Time.timeScale = 0f;
@@ -45,5 +45,20 @@ public class Controlador_Escena : MonoBehaviour
     public static void siguienteEscena() {
         int siguiente = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(siguiente);
+        if(siguiente > PlayerPrefs.GetInt("levelAt"))
+        {
+            PlayerPrefs.SetInt("levelAt", siguiente);
+        }
+    }
+
+    public static void empiezaJuego()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public static void menuPrincipal()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 }

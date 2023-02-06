@@ -11,7 +11,7 @@ public class tableroGyro : MonoBehaviour
     private float tiltAroundZ;
     private float tiltAroundX;
     private Gyroscope gyro;
-    private bool gyroActive;
+    private bool gyroActive = false;
 
     public void Start() 
     {

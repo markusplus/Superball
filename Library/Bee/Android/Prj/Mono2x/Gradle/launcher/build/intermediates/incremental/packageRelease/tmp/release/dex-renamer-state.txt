@@ -1,0 +1,4 @@
+#Sun Feb 05 18:47:51 CET 2023
+base.0=D\:\\Superball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

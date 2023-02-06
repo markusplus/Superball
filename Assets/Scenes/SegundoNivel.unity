@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43424127, g: 0.48113048, b: 0.5620362, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -747,7 +747,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 156490102}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1200343686}
+        m_TargetAssemblyTypeName: Controlador_Escena, Assembly-CSharp
+        m_MethodName: menuPrincipal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &156490105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3166,13 +3178,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785264480}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7911f6515ad64e947a2842f060ea9491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 20
-  anguloMax: 30
+  anguloMax: 40
 --- !u!114 &785264482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3180,7 +3192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785264480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2155b31d5b8c1d547adcd714b7d2d3cb, type: 3}
   m_Name: 
@@ -4052,7 +4064,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67800
+  m_Name: pb_Mesh53210
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

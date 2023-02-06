@@ -17,7 +17,6 @@ public class camara_menu : MonoBehaviour
     void Update()
     {
         var posicion = gameObject.transform.position;
-        bool ir = true;
         time += Time.deltaTime;
         if (time >= interpolationPeriod)
         {
